@@ -1,2 +1,2 @@
-# expense-tracker
-allows you to monitor your expenses.
+# Expense Tracker React App
+It allows you to monitor your expenses.
