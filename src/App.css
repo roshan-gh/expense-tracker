@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: centers;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif; 
+}
+
+
+.header{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.header__top{
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header__down{
+  letter-spacing: 1rem;
+  font-weight:200;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 5rem;
+  margin: 3rem auto;
+  min-height: 50vh;
+}
+
+.balance{
+  background-color: #D92B52;
+  border-radius: 1rem;
+  color:#f7f7f7;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 5rem;
+  padding: 4rem;
+  min-width: 40vw;
+}
+
+.balance__main{
+  font-size:3rem;
+  margin-left: 3rem;
+}
+
+.balance__sub{
+  font-size:2rem;
+}
+
+.income-expenses{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius:1rem;
+  border: 1px solid #D92B52;
+  height: max-content;
+  min-width: 20vw;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.income-expenses__money{
+  margin: 2rem auto;
+}
+
+.plus{
+  color: #2ecc71;
+}
+
+.minus {
+  color: #c0392b;
+}
+
+.income-expenses > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.income-expenses > div {
+  flex: 1;
+  text-align: center;
+}
